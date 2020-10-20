@@ -1,0 +1,81 @@
+{
+  "version": 2,
+  "builds": [{ "src": "./bin/www.js", "use": "@now/node-server" }],
+  "routes": [
+    {
+      "src": "/api/movies",
+      "dest": "./bin/www.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/movies",
+      "dest": "./bin/www.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/movies/:movie_id",
+      "dest": "./bin/www.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/movies/:movie_id",
+      "dest": "./bin/www.js",
+      "methods": ["PUT"]
+    },
+    {
+      "src": "/api/movies/:movie_id",
+      "dest": "./bin/www.js",
+      "methods": ["DELETE"]
+    },
+    {
+      "src": "/api/movies/top10",
+      "dest": "./bin/www.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/movies/between/:start_year/:end_year",
+      "dest": "./bin/www.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/directors",
+      "dest": "./bin/www.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/directors",
+      "dest": "./bin/www.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/api/directors/:director_id",
+      "dest": "./bin/www.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/api/directors/:director_id",
+      "dest": "./bin/www.js",
+      "methods": ["PUT"]
+    },
+    {
+      "src": "/api/directors/:director_id",
+      "dest": "./bin/www.js",
+      "methods": ["DELETE"]
+    },
+    {
+      "src": "/api/directors/:director_id/best10movie",
+      "dest": "./bin/www.js",
+      "methods": ["GET"]
+    },
+    {
+      "src": "/register",
+      "dest": "./bin/www.js",
+      "methods": ["POST"]
+    },
+    {
+      "src": "/authenticate",
+      "dest": "./bin/www.js",
+      "methods": ["POST"]
+    }
+  ]
+}

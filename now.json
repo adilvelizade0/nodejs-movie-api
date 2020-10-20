@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "builds": [{ "src": "./bin/www.js", "use": "@now/node-server" }],
+  "builds": [{ "src": "*.js", "use": "@now/node-server" }],
   "routes": [
     {
       "src": "/api/movies",
